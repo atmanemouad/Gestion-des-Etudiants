@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se connecter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+      max-width: 500px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    .form-group label {
+      font-weight: bold;
+      color: #495057;
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Connexion Étudiant</h1>
+    <form method="post" action="VerifierExistence.php">
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+      </div>
+      <div class="form-group">
+        <label for="cin">CIN :</label>
+        <input type="text" class="form-control" id="cin" name="cin" placeholder="Numéro de CIN" required>
+      </div>
+      <div class="form-group">
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" class="form-control" id="date_naissance" name="date_naissance" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Connexion</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
