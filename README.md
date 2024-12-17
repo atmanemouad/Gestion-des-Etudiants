@@ -14,6 +14,6 @@ Cette application est un petit projet de gestion d'étudiants développé en PHP
 
 ## Technologies Utilisées
 
-- **Langage de Programmation** : PHP.
+- **Back-end** : PHP.
 - **Base de Données** : MySQL.
-- **Frontend** : HTML, CSS, Bootstrap 4.
+- **Front-end** : HTML, CSS, Bootstrap 4.
